@@ -1,0 +1,19 @@
+{
+  "name": "test-repo",
+  "version": "1.0.0",
+  "description": "Repo used for testing things",
+  "main": "index.js",
+  "scripts": {
+    "test": "corp-semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uglow/test-repo.git"
+  },
+  "author": "Brett Uglow <u_glow@hotmail.com> (http://uglow.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uglow/test-repo/issues"
+  },
+  "homepage": "https://github.com/uglow/test-repo#readme"
+}
