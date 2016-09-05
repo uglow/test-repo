@@ -8,7 +8,7 @@
 
   <title>test-repo - Cards</title>
   <link rel="icon" href="/test-repo/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="/test-repo/theme.2311f963.css">
+  <link rel="stylesheet" type="text/css" href="/test-repo/theme.9df2d9ba.css">
   <link rel="stylesheet" type="text/css" href="/test-repo/undefined">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,600,600italic,300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
@@ -28,7 +28,7 @@
 <div class="index_brand__1MNWq"><a href="/test-repo/" class="index_logo__37AHe"></a></div>
 
 
-<a href="https://github.com/uglow/test-repo" title="test-repo Github Repo" target="_blank" class="index_github__2lE9t"></a>
+<a href="https://example.com/entity/test-repo" title="test-repo Github Repo" target="_blank" class="index_github__2lE9t"></a>
 
 
 <aside id="offCanvasNav" class="index_sidebar__1dvxO">
@@ -69,7 +69,15 @@
       
       
       
-      <a href="#sid-UjD0tGQ1" class="index_a__jj5Md" data-scroll>1.3 Card Accessibility</a>
+      <a href="#sid-8P2kaZ7U" class="index_a__jj5Md" data-scroll><strong>1.1</strong> Card Component</a>
+      
+      
+      
+      <a href="#sid-yjZJyI1b" class="index_a__jj5Md" data-scroll><strong>1.2</strong> Card Header</a>
+      
+      
+      
+      <a href="#sid-kQuiXin6" class="index_a__jj5Md" data-scroll>1.3 Card Accessibility</a>
       
       
     </div>
@@ -85,7 +93,7 @@
     
 
     
-    <section id="sid-8nekwWV3" class="index_section__3pKKD">
+    <section id="sid-smzFEfhI" class="index_section__3pKKD">
   
 
   <h2 class="index_h2__1M44z" id="__01__cards"><strong class="index_strong__3slXg">01</strong> Cards</h2>
@@ -100,7 +108,250 @@
 </div>
 </section>
     
-    <section id="sid-UjD0tGQ1" class="index_section__3pKKD">
+    <section id="sid-8P2kaZ7U" class="index_section__3pKKD">
+  
+    
+      <h3 class="index_h3__3fG9k"><strong>1.1</strong> Card Component</h3>
+    
+  
+
+  
+<h4 class="index_h4__2w1cz"><strong>name:</strong> <code class="index_code__1xZ6k">swanky.components.card:cardComponent</code></h4>
+
+<p class="index_p__3pr0N">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut molestie leo, ut suscipit est.
+Sed ut molestie ligula. Aenean in elit at erat luctus laoreet congue sit amet massa. Donec dapibus dolor sit amet neque
+commodo maximus.</p></p>
+
+
+
+
+
+<div>
+  
+</div>
+<h4 class="index_h4__2w1cz">Example</h4>
+<div class="index_code-snippet__2nwN_">
+
+
+<div data-test-id="component-example" class="index_code-preview__1DHyC component-example-cardComponent">
+<div class="card-grid">
+ <card>
+  <card-header hero="https://s3-ap-southeast-2.amazonaws.com/swanky-docs/images/heros/hero-01.jpg"
+  avatar="https://s3-ap-southeast-2.amazonaws.com/swanky-docs/images/avatars/avatar-01.jpg"
+  badge="blog"></card-header>
+
+  <card-content>
+   <h5>Travel / Adventure</h5>
+   <h2>Living Helsinki</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   <button class="btn-default">View</button>
+  </card-content>
+
+  <card-footer>
+   <card-action type="comment">6</card-action>
+   <card-action type="like">81</card-action>
+  </card-footer>
+ </card>
+
+ <card>
+  <card-header hero="https://s3-ap-southeast-2.amazonaws.com/swanky-docs/images/heros/hero-02.jpg"
+  avatar="https://s3-ap-southeast-2.amazonaws.com/swanky-docs/images/avatars/avatar-02.jpg"
+  badge="blog"></card-header>
+
+  <card-content>
+   <h5>Travel / Adventure</h5>
+   <h2>Hipster Bearding</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   <button class="btn-default">View</button>
+  </card-content>
+
+  <card-footer>
+   <card-action type="comment">6</card-action>
+   <card-action type="like">81</card-action>
+  </card-footer>
+ </card>
+
+ <card>
+  <card-header hero="https://s3-ap-southeast-2.amazonaws.com/swanky-docs/images/heros/hero-03.jpg"
+  avatar="https://s3-ap-southeast-2.amazonaws.com/swanky-docs/images/avatars/avatar-03.jpg"
+  badge="blog"></card-header>
+
+  <card-content>
+   <h5>Travel / Adventure</h5>
+   <h2>A Walk in the Woods</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   <button class="btn-default">View</button>
+  </card-content>
+
+  <card-footer>
+   <card-action type="comment">6</card-action>
+   <card-action type="like">81</card-action>
+  </card-footer>
+ </card>
+</div></div>
+
+<h4 class="index_h4__2w1cz">Code Example</h4>
+<div class="index_window-bar__1Utgl sd-accordion">
+  <div class="index_circles__3dWmI">
+    <span class="index_circle__1YRmC index_circle-red__gmRjJ"></span>
+    <span class="index_circle__1YRmC index_circle-yellow__31Y6o"></span>
+    <span class="index_circle__1YRmC index_circle-green__2jL_l"></span>
+  </div>
+</div>
+<div class="index_code-wrapper__2Xtjw sd-panel">
+  <pre class="line-numbers"><code class="language-markup"><card>
+ <card-header hero="http://bit.ly/2aC3YgJ" avatar="http://bit.ly/2avTw7Y" badge="blog"></card-header>
+
+ <card-content>
+  <h5>Travel / Adventure</h5>
+  <h2>Living Helsinki</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <button class="btn-default">View</button>
+ </card-content>
+
+ <card-footer>
+  <card-action type="comment">6</card-action>
+  <card-action type="like">81</card-action>
+ </card-footer>
+</card></code></pre>
+</div>
+
+</div>
+
+
+
+<h4 class="index_h4__2w1cz">General Info</h4>
+
+<ul class="index_ul__1PwYZ">
+  <li class="index_li__17-DQ">This directive creates new scope.</li>
+  <li class="index_li__17-DQ">This directive executes at priority level 0.</li>
+  
+</ul>
+
+
+
+</section>
+    
+    <section id="sid-yjZJyI1b" class="index_section__3pKKD">
+  
+    
+      <h3 class="index_h3__3fG9k"><strong>1.2</strong> Card Header</h3>
+    
+  
+
+  
+<h4 class="index_h4__2w1cz"><strong>name:</strong> <code class="index_code__1xZ6k">swanky.components.card:cardHeader</code></h4>
+
+<p class="index_p__3pr0N">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut molestie leo, ut suscipit est.</p></p>
+
+
+
+
+
+<div>
+  
+</div>
+<h4 class="index_h4__2w1cz">Example</h4>
+<div class="index_code-snippet__2nwN_">
+
+
+<div data-test-id="component-example" class="index_code-preview__1DHyC component-example-cardHeader">
+<card-header hero="https://s3-ap-southeast-2.amazonaws.com/swanky-docs/images/heros/hero-03.jpg"
+avatar="https://s3-ap-southeast-2.amazonaws.com/swanky-docs/images/avatars/avatar-03.jpg"
+badge="blog"></card-header></div>
+
+<h4 class="index_h4__2w1cz">Code Example</h4>
+<div class="index_window-bar__1Utgl sd-accordion">
+  <div class="index_circles__3dWmI">
+    <span class="index_circle__1YRmC index_circle-red__gmRjJ"></span>
+    <span class="index_circle__1YRmC index_circle-yellow__31Y6o"></span>
+    <span class="index_circle__1YRmC index_circle-green__2jL_l"></span>
+  </div>
+</div>
+<div class="index_code-wrapper__2Xtjw sd-panel">
+  <pre class="line-numbers"><code class="language-markup"><card-header hero="http://bit.ly/2aC3YgJ" avatar="http://bit.ly/2avTw7Y" badge="blog"></card-header></code></pre>
+</div>
+
+</div>
+
+
+
+<h4 class="index_h4__2w1cz">General Info</h4>
+
+<ul class="index_ul__1PwYZ">
+  <li class="index_li__17-DQ">This directive creates new scope.</li>
+  <li class="index_li__17-DQ">This directive executes at priority level 0.</li>
+  
+</ul>
+
+
+<section class="">
+  <h4 class="index_h4__2w1cz">Arguments</h4>
+  <table class="index_variables-matrix__iEWNJ index_input-arguments__2IQ4D index_table__3OZrL">
+    <thead class="">
+    <tr class="index_tr__1uiXL">
+      <th class="index_th__1HaB0">Param</th>
+      <th class="index_th__1HaB0">Type</th>
+      <th class="index_th__1HaB0">Details</th>
+    </tr>
+    </thead>
+    <tbody class="">
+    
+    <tr class="index_tr__1uiXL">
+      <td class="index_td__XNYfS">
+        hero        
+        
+      </td>
+      <td class="index_td__XNYfS">
+        
+          <a href="" class="String index_a__jj5Md">String</a>
+        
+      </td>
+      <td class="index_td__XNYfS">
+        url to 'hero' image - relative or absolute        
+      </td>
+    </tr>
+    
+    <tr class="index_tr__1uiXL">
+      <td class="index_td__XNYfS">
+        badge        
+        
+      </td>
+      <td class="index_td__XNYfS">
+        
+          <a href="" class="String index_a__jj5Md">String</a>
+        
+      </td>
+      <td class="index_td__XNYfS">
+        a label for the badge        
+      </td>
+    </tr>
+    
+    <tr class="index_tr__1uiXL">
+      <td class="index_td__XNYfS">
+        avatar        
+        
+      </td>
+      <td class="index_td__XNYfS">
+        
+          <a href="" class="String index_a__jj5Md">String</a>
+        
+      </td>
+      <td class="index_td__XNYfS">
+        url to avatar image - relative or absolute        
+      </td>
+    </tr>
+    
+    </tbody>
+  </table>
+</section>
+
+
+</section>
+    
+    <section id="sid-kQuiXin6" class="index_section__3pKKD">
   
 
   <h3 class="index_h3__3fG9k" id="__13__cardaccessibility"><strong class="index_strong__3slXg">1.3</strong> Card Accessibility</h3>
@@ -122,5 +373,5 @@
         
       </footer>
     </div>
-  <script src="/test-repo/theme.2311f963.bundle.js"></script><script src="/test-repo/docs.2311f963.bundle.js"></script><script src="/test-repo/snippets.2311f963.bundle.js"></script></body>
+  <script src="/test-repo/bootstrap-angular.4823a2fa.bundle.js"></script><script src="/test-repo/theme.9df2d9ba.bundle.js"></script><script src="/test-repo/docs.9df2d9ba.bundle.js"></script><script src="/test-repo/snippets.9df2d9ba.bundle.js"></script></body>
 </html>
