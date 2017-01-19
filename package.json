@@ -1,19 +1,38 @@
 {
-  "name": "test-repo",
-  "version": "1.1.0",
-  "description": "Repo used for testing things",
+  "name": "eslint-config-test",
+  "version": "1.2.0",
+  "description": "ESLint test repo",
+  "license": "UNLICENSED",
+  "author": "Test",
   "main": "index.js",
-  "scripts": {
-    "test": "corp-semantic-release"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uglow/test-repo.git"
+    "url": "https://stash.odecee.com.au/inter/test-repo.git"
   },
-  "author": "Brett Uglow <u_glow@hotmail.com> (http://uglow.github.io/)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/uglow/test-repo/issues"
+  "scripts": {
+    "release": "npm-run-all semantic-release \"_publish -- {1}\" --",
+    "semantic-release": "corp-semantic-release --changelogpreset angular-bitbucket",
+    "_publish": "npm publish"
   },
-  "homepage": "https://github.com/uglow/test-repo#readme"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "config/release/commitMessageConfig.js"
+    },
+    "ghooks": {
+      "commit-msg": "node ./node_modules/cz-customizable-ghooks/lib/index.js $2"
+    }
+  },
+  "devDependencies": {
+    "corp-semantic-release": "3.0.1",
+    "cz-customizable": "4.0.0",
+    "cz-customizable-ghooks": "1.4.0",
+    "ghooks": "1.3.2",
+    "npm-run-all": "3.1.0"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  }
 }
